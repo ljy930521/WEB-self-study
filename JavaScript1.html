@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <!-- <input type="button" value="night" onclick="
+        
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        "> -->
+    <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(document.querySelector('#night_day').value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            document.querySelector('#night_day').value = 'day'
+        }else{
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            document.querySelector('#night_day').value = 'night'
+        }
+        
+        ">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+    </ol>
+    <h2>JavaScript</h2>
+    <p>
+        야간모드 버튼을 만들었다
+        주간모드 버튼도 만들었다
+        동적인 자바스크립트 언어를 알아가는 중이다.
+        조건문으로 버튼을 하나로 합쳤다.
+    </p>
+    <input id="night_day" type="button" value="night" onclick="
+    if(this.value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        this.value = 'day'
+    }else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        this.value = 'night'
+    }
+    
+    ">
+</body>
+
+</html>
